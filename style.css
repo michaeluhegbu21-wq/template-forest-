@@ -1,0 +1,117 @@
+body {
+background: white;
+ font-size: medium;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: bold;
+ font-style: normal;
+}
+h1 {
+ 
+  background-size: initial;
+ position: relative;
+text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+}
+
+ nav  {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-top-left-radius: 1rem;
+ }
+ nav a {
+  color:red ;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: blue;
+  border: cornsilk;
+ 
+}
+
+
+  
+
+header {
+  text-align: center;
+  padding: 120px 20px 60px;
+  background-color: crimson;
+  background: crimson;
+}
+ 
+head {
+  background-attachment: fixed;
+  background-color: brown;
+
+
+}
+header img {
+  width: 160px;
+  animation: float 4s ease-in-out infinite;
+}
+div{
+  color: red;
+  text-align: center;
+}
+
+style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+ transition: cubic-bezier(0.3s);
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  color: whiteblack;
+  background: white;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
+input{
+  border-width: 16px;
+  width: 300px;
+  writing-mode: horizontal-tb;
+  border-top-left-radius: 16px;
+  background: white;
+  border-color: white;
+  line-height: 10px;
+  font-size:x-large;
+}
+h2{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
