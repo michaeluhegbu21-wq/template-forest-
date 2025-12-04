@@ -1,9 +1,5 @@
 body {
-background: white;
- font-size: medium;
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-weight: bold;
- font-style: normal;
+  background: snow;
 }
 h1 {
  
@@ -37,7 +33,7 @@ text-align: center;
 
 header {
   text-align: center;
-  padding: 120px 20px 60px;
+  padding: 20px;
   background-color: crimson;
   background: crimson;
 }
@@ -45,12 +41,13 @@ header {
 head {
   background-attachment: fixed;
   background-color: brown;
-
+border-radius: 25px;
 
 }
 header img {
   width: 160px;
   animation: float 4s ease-in-out infinite;
+  
 }
 div{
   color: red;
@@ -58,7 +55,7 @@ div{
 }
 
 style
- {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -114,4 +111,31 @@ h2{
 }
 p{
   text-align: center;
+  display:none;
+   text-align: center;
+   color: red;
+  
 }
+div img {
+  width: 160px;
+  animation: float 4s ease-in-out infinite;
+}
+#logoutBtn{
+  color: black;
+  background: red;
+}
+h1 img {
+  width: 200px;
+  animation: float 2s ease-in-out infinite; 
+  border: red;
+max-width: 200px;
+background: royalblue;
+}
+.template-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);/*2 items per row*/
+  gap: 20px;
+  padding: 20px;
+  
+}
+
