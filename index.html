@@ -4,22 +4,145 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TEMPLATE FOREST</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--header-->
   <header>
+
+    <!--nav-->
+   <nav class="navigationBar" ><button> <a href="./about.html" class="nav-btn">ABOUT</a></button>
+    <button> <a href="./support.html" class="nav-btn">SUPPORT</a></button>
+     <button><a href="./faq.html" class="nav-btn">FAQ</a></button>
+   <button> <a href="#hotpicks" class="nav-btn"><strong>Hot Picks</a></strong></button> 
+   <button> <a href="#reviews" class="nav-btn"><strong>Reviews</a></strong></button>
+  </nav>
+
+<img src="logo5.jpg" alt=" logo" class="leftImg">
+
+  
+  <!--hero-->
+<video id="heroVideo"></video>
+  <video autoplay loop muted playsinline poster="placeholder-image.jpg">
+    <source src="introvideo.mp4" type="video/mp4">
+    <source src="introvideo.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+
     <div class="hero-section">
-      <h1 class="animate-in">THE FASTEST WAY TO LAUNCH YOUR PROJECT</h1>
-      <p>
-        ACCESS HUNDREDS OF PREMIUM HIGH QUALITY AND HIGH CONVERTING TEMPLATES FOR BLOGS, E-COMMERCE, PORTFOLIO AND MANY MORE CATEGORIES OF TEMPLATES.STOP CODING FROM THE SCRATCH <h1>LAUNCH NOW BUILD FASTER</h1>
+      <h1 class="animate-in"><h1>FASTEST WAY TO LAUNCH YOUR PROJECT!</h1></header>
+<h2><strong class="strong">  FREE AND PREMIUM WEBSITES TEMPLATES BUILT FOR YOU</strong></h2>
+      
+        <h1>WHY  SPEND MUCH TIME BUILDING FROM THE SCRATCH? TURN IDEAS TO WEBSITES INSTANTLY
+        <p><button class="access"><a href="#categories"><i>access lots of templates now !</i></a></button></h1>
+
+        Access Hundreds Of Premium High Quality And High Converting Templates For <strong><i>BLOGS, E-COMMERCE, PORTFOLIO AND MANY MORE CATEGORIES OF TEMPLATES.</i></strong></p> 
+        <h1>STOP CODING FROM THE SCRATCH </h1>
+        <h1>LAUNCH NOW BUILD FASTER</h1>
       </p>
-     <button> <a href="./signup.html" class="cta-button">Get Started Now</a></button>
+     <button class="getStarted"><a href="#categories" >Get Started Now</a></button>
       
     </div>
-  </header>
+  
+<!--feature-->
   <div class="feature-section">
     <h2>Why Choose Our Templates</h2>
+    <div class="feature-grid">
+
+    <div class="feature-item">
+      <span class="icon"> </span>  
+      <h3>Instant Launch</h3>
+      <p>Download and Deploy your website in minutes. Our templates are pre-optimized and production-ready</p></div>
+
+      <div class="feature-item">
+        <span class="icon"> </span>
+        <h3>Pixel Perfect </h3>
+<p>Crafted by professional designer to ensure a polished and trustworthy user experience</p></div>
+      
+
+      <div class="feature-item">
+        <span class="icon"> </span>
+
+        <h3>Secure and Reliable</h3>
+        <p>All templates are audited for security vulnerabilities and built with clean, standards -compliant codes</p>
+      </div>
+      
+      </div>
   </div>
+
+
+      <div class="footer-cta">Ready to Build Something Amazing?
+<a href="#categories"><button> LAUNCH YOUR TEMPLATES NOW</button> </a></div>
+
+
+<section id="reviews">
+  <h2>REVIEWS FROM CLIENTS</h2>
+  <div class="review-box">
+
+    <!--review-->
+    <img src="" alt="">
+    <p>If 100 star is allowed I would rate it ! The setup was genuinely quick.I had the template installed, customized with my colours and the Demo content swapped out in less than two hours. A Huge Time Saver</p>
+
+<img src="" alt="">
+    <P>I'm a total beginner with code but the documentation and drag and drop elements were intuitive.This is the first template i actually got working on without needing to hire a Developer in essence,- 'Easy to customize templates"</P>
+
+    <img src="" alt="">
+    <p>'The Aether' template is incredibly responsive.It looks flawless on my desktop tablet and mobile, and the subtle animations load without any lag Great design Quality
+
+<img src="" alt="">
+    <p>"The intergrated SEO features are freantasticc.After Launching,our site map was generated instantly and the page speed are scoring on Google's tests.It's more than just a pretty design</p>"</p>
+
+
+    <p>I ran into a minor issue with the contact form intergration, and the support team responded to my message in 30 minutes with a perfect solution. Outstanding service I felt completely supported. </p>
+
+    <p><strong>Their support is world class</strong> They explained how they fixed so I could learn for next time Its clear that they care for their customers</p>
+  </div>
+</section>
+
+
+<!--news letter-->
+<section class="subscribe-box">
+  <h2>Subscribe For Our Newsletter for Updates on Newly Releasd Templates (Optional)</h2>
+  <form class="form" id="subscribeForm" action="submit" method="POST">
+  <h3> <label for="name">FIRST NAME:</label>
+    <input type="text" id="name"  placeholder="John" required></h3>
+
+    <h3> <label for="name">LAST NAME:</label>
+      <input type="text" id="name"  placeholder=" Doe" required></h3>
+
+   <h3> <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="@gmail.com" required></h3>
+  
+    <button class="submit-btn" type="submit">Subscribe now</button>
+  </form>
+   <br>
+   <br>
+   <br>
+<button><a href="./templatelist.html">Launch Now!</a></button>  
+
+<!--footer-->
+  <footer></footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const video = document.getElementById('heroVideo');
+  const sources = video.getElementsByTagName('source');
+
+  // Loop through all source tags and change data-src to src
+  for (let i = 0; i < sources.length; i++) {
+    const dataSrc = sources[i].getAttribute('data-src');
+    if (dataSrc) {
+      sources[i].setAttribute('src', dataSrc);
+    }
+  }
+
+  // Load the video element after the sources are set
+  video.load(); 
+});
+
+</script>
+
+  
   
 </body>
 </html>
