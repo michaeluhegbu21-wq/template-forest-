@@ -1,65 +1,169 @@
+style{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+        scroll-behavior: smooth;
+}
+
 body {
-  background: snow;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(black, rgba(0, 128, 0, 0.651));
+  color: white;
+  font-size: 16px;
+transition: background-color 0.3s,color 0.3s;
 }
-h1 {
- 
-  background-size: initial;
- position: relative;
-text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  color: red;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  padding: 15px 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
-
- nav  {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   border-top-left-radius: 1rem;
- }
- nav a {
-  color:red ;
+nav a {
+  color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bolder;
   transition: 0.3s;
-  text-transform: uppercase;
-  text-decoration: none;
-  box-shadow: blue;
-  border: cornsilk;
- 
 }
-
-
-  
+nav a:hover {
+  color: #00aaff;
+}
 
 header {
   text-align: center;
-  padding: 20px;
-  background-color: crimson;
-  
-}
- 
-head {
-  background-attachment: fixed;
-  background-color: brown;
-border-radius: 25px;
-
-}
-header img {
-  width: 100px;
-  
-  
-}
-div{
-  color: red;
+  padding: 80px 20px 40px;
   text-align: center;
 }
+header img {
+  width: 160px;
+  animation: float 4s ease-in-out infinite;
+}
+h1 {
+  font-size: 32px;
+  margin-top: 10px;
+}
 
-style
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+
+section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+  animation: fade 0.8s ease;
+}
+h2 {
+  font-size: 32px;
+  border-left: 5px solid #00aaff;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+.feature-section{
+  box-sizing: content-box;
+  
+  background: black;
+  text-emphasis-color:rgb(0, 128, 100);
+padding: 60px 5%;
+margin-bottom: 50px;
+}
+.feature-item{
+  flex-basis: 30%;
+min-width: 250px;
+background-color:rgb(0, 128, 100);
+padding: 30px;
+border-radius: 8px;
+box-shadow: white;
+text-align: left;
+margin-bottom: 50px;
+}
+.feature-item h3{
+  color:black;
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+.subscribe-box{
+  padding: 12px;
+  box-sizing: content-box;
+  background: rgb(0, 128, 100);
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+.form{
+  background: black;
+  border: white;
+  padding: 50px;
+  border-radius: 100px;
+}
+
+#name{
+  font-size: x-large;
+  font-style: normal;
+  border-radius: 30px;
+}
+
+#email{
+  font-size: x-large;
+  font-style: normal;
+  border-radius: 30px; 
+}
+
+.submit-btn{
+  border-radius: 100px;
+  color:black;
+  background: rgb(0, 128, 100);
+  transition: ease-in-out;
+}
+
+button{
+  color: white;
+  background: black;
+  transition: ease-in-out;
+  background-size: 2rem;
+  border-color: thistle;
+  border-style: outset;
+  position: sticky;
+  bottom: 25px;
+  right: 25px;
+  
+  padding: 10px 16px;
+  border-radius: 50px;
+  
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px black;
+}
+button:hover{
+ transform: scale(1.2);
+ transition: ease-in-out;
+ cursor: pointer;
+}
+nav:hover{
+  transform: scale(1.2);
+  transition: ease-in-out;
+ cursor: pointer;
+}
+div:hover{
+  transform: scale(1.1);
+  transition: ease-in-out;
+ cursor: pointer;
+}
+
+
+p{
+  font-size: x-large;
+  font-style: normal;
+}
+
+.strong{
+  font-weight: bolder;
+  background: rgb(0, 255, 234);
+  color: black;
 }
 @keyframes float {
   0% {
@@ -75,78 +179,74 @@ style
 @keyframes fade {
   from {
     opacity: 0;
-    transform: translateY(30px);
+   transform: translateY(30px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-button{
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bolder;
- transition: cubic-bezier(0.3s);
-  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-  color: whiteblack;
-  background: white;
-}
-
-button:hover{
-  transform: scale(1.05);
-}
-input{
-  border-width: 16px;
-  width: 300px;
-  writing-mode: horizontal-tb;
-  border-top-left-radius: 16px;
-  background: white;
-  border-color: white;
-  line-height: 10px;
-  font-size:x-large;
-}
-h2{
-  text-align: center;
-}
-p{
-  text-align: center;
-  display:none;
-   text-align: center;
-   color: red;
+@media(max-width:768px){
+  nav{
+    flex-direction: column; 
+    gap:  15px;
+    
   
+
+  }
+
+  @media (max-width:768px) {
+    .navbar{
+      flex-direction:columnn
+
+    }
+  }
+    
+  }
+html{
+  scroll-behavior: smooth;
 }
-div img {
-  width: 160px;
-  animation: float 4s ease-in-out infinite;
-}
-#logoutBtn{
-  color: red;
-  background:black ;
-}
-h1 img {
-  width: 200px;
-  animation: float 2s ease-in-out infinite; 
-  border: red;
-max-width: 200px;
-background: royalblue;
-}
-.template-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);/*2 items per row*/
-  gap: 20px;
+footer{
+  text-align: center;
   padding: 20px;
-  
+  background:  linear-gradient(black, rgb(0, 128, 75));
+  margin-top: 20px;
 }
-h3{
-  text-align: center;
+.footer-cta p{
+  font-size: 16px;
 }
-
-h3 img{
-align-items: center;
-}
-.profile-icon-btn{
-  width:5cm ;
-  height: 1cm;
+.footer-cta{
+  padding: 50px 20px;
+  background-color: black;
+  margin-top: 50px;
 }
 
+.hero-video {
+  /* Ensure the video container itself is positioned correctly */
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Example: make the hero section full viewport height */
+}
+
+.hero-video video {
+  /* Styling to make the video cover its container */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Place the video behind any overlaid content (text, buttons) */
+  object-fit: cover; /* Ensures the video covers the area without distorting aspect ratio */
+}
+
+.fixed-left-image {
+  position: fixed;
+  left: 0;
+  top: 0; /* Anchors it to the very top */
+  width: 150px; /* Example size */
+  z-index: 1000; /* Ensures it sits above other content */
+}
